@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte · Gazette de Valmorra</title>
+
+  <link rel="stylesheet" href="JDR.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-label">Gazette de</span>
+      <span class="brand-name">Valmorra</span>
+      <span class="brand-era">Édition publique · Année 842</span>
+    </div>
+
+    <nav class="nav">
+  <a class="nav-link" href="JDR.html">Accueil</a>
+  <a class="nav-link" href="journal.html">Journal</a>
+  <a class="nav-link active" href="carte.html">Carte</a>
+  <a class="nav-link" href="dossiers.html">Dossiers</a>
+</nav>
+
+  </header>
+
+  <main class="layout">
+
+    <!-- COLONNE PRINCIPALE -->
+    <section class="col-main">
+
+      <!-- TITRE PAGE -->
+      <article class="card">
+        <header class="card-header">
+          <h1 class="card-title">Carte publique de Valmorra</h1>
+        </header>
+
+        <p class="focus-text">
+          Cette carte représente une version publique et approximative du continent.
+          Les frontières exactes, les routes militaires ou les lieux sensibles
+          ne sont volontairement pas affichés.
+        </p>
+      </article>
+
+      <!-- CARTE INTERACTIVE -->
+      <article class="card map-card">
+
+        <div class="map-container">
+          <!-- Image de carte (placeholder pour l’instant) -->
+          <img src="https://i.imgur.com/HS1y3uN.jpeg" class="map-image" alt="Carte du continent (placeholder)">
+
+         <!-- POINTS CLIQUABLES : chaque point ouvre une région -->
+<a href="regions/nord.html" class="map-point" style="top: 35%; left: 30%;"></a>
+
+<a href="regions/est.html" class="map-point" style="top: 40%; left: 70%;"></a>
+
+<a href="regions/sud.html" class="map-point" style="top: 70%; left: 50%;"></a>
+
+<a href="regions/ouest.html" class="map-point" style="top: 55%; left: 15%;"></a>
+
+<a href="regions/centre.html" class="map-point" style="top: 50%; left: 45%;"></a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- COLONNE DROITE -->
+    <aside class="col-side">
+
+      <article class="card">
+        <header class="card-header">
+          <h2 class="card-title">Informations publiques</h2>
+        </header>
+        <p class="focus-text">
+          La carte présentée ici rassemble uniquement des informations disponibles
+          auprès de voyageurs, crieurs, marchands et annonces officielles.
+        </p>
+        <p class="focus-text">
+          Toute précision géographique plus sensible est omise pour des raisons évidentes
+          de sécurité, de rumeurs contradictoires ou de manque de fiabilité.
+        </p>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <h2 class="card-title">Note</h2>
+        </header>
+        <p class="focus-text">
+          La réalité du terrain peut différer de manière significative.  
+          Cette carte n’a aucune valeur militaire.
+        </p>
+      </article>
+
+    </aside>
+
+  </main>
+
+  <!-- POPUP INFO -->
+  <div id="map-popup" class="map-popup hidden"></div>
+
+  <footer class="footer">
+    Gazette de Valmorra · Carte publique · Version 0.1
+  </footer>
+
+  
+
+</body>
+</html>

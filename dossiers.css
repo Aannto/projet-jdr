@@ -1,0 +1,145 @@
+/* ===========================
+   DOSSIERS — PAGE UNIQUEMENT
+   =========================== */
+
+/* Intro dossiers */
+.dossiers-intro {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.dossiers-intro h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.dossiers-intro p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* ===========================
+   CATEGORIES (HUB)
+   =========================== */
+
+.dossiers-categories {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.dossier-category {
+  background: rgba(5, 8, 22, 0.6);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.dossier-category:hover {
+  color: var(--accent);
+  border-color: var(--accent-soft);
+  background: rgba(10, 255, 172, 0.06);
+}
+
+/* ===========================
+   SECTIONS CONTENU
+   =========================== */
+
+/* cachées par défaut */
+.dossier-section {
+  display: none;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+/* ===========================
+   TITRES DE SECTION
+   =========================== */
+
+.dossier-section h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.dossier-section .section-desc {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+/* ===========================
+   GRILLE GENERIQUE (REGIONS,
+   PERSONNAGES, ETC.)
+   =========================== */
+
+.dossier-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .dossier-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===========================
+   CARTE DOSSIER
+   =========================== */
+
+.dossier-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.dossier-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.dossier-tag {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.dossier-card p {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* ===========================
+   TEXTE PLACEHOLDER
+   =========================== */
+
+.dossier-placeholder {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-top: 1.5rem;
+}
